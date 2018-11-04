@@ -33,6 +33,22 @@ h3 {
   }
 }
 
+main#home h2 {
+  font-size: 3rem;
+}
+
+//blink effect for typewriter border
+@-webkit-keyframes blink {
+  50% {
+    border-color: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+/*Cursor effect*/
+.txt-type > .txt {
+  border-right: 0.1rem solid $secondary-color;
+  animation: blink 0.5s step-end infinite alternate;
+}
+
 a {
   color: #fff;
   text-decoration: none;
