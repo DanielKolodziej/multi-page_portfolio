@@ -39,7 +39,7 @@
     height: 25vh;
 
     .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/editedMe150test.jpg");
       width: 150px;
       height: 150px;
     }
@@ -63,10 +63,27 @@
 //phones
 @include mediaSm {
   main#home h1 {
+    font-size: 4rem;
     margin-top: 10vh;
   }
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .boxes {
+    div {
+      font-size: 1.2rem;
+    }
+  }
+
+  main {
+    padding: 4rem 1rem;
+  }
+
+  .about-info {
+    .bio {
+      font-size: 1.25rem;
+    }
   }
 }

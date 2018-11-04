@@ -12,6 +12,7 @@
     height: 3px;
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
+    box-shadow: 1px 1px 5px $secondary-color;
     @include easeOut;
   }
 
@@ -20,8 +21,10 @@
     transform: rotate(180deg);
 
     .btn-line {
+      box-shadow: none;
       // Line 1 - Rotate
       &:nth-child(1) {
+        background-color: $secondary-color;
         transform: rotate(45deg) translate(5px, 5px);
       }
 
@@ -43,7 +46,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.975;
   visibility: hidden;
 
   &.show {
@@ -90,7 +93,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/editedMe250b.jpg");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
