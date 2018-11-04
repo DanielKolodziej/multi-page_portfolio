@@ -1,7 +1,6 @@
 @import "config";
 @import "menu";
 
-// makes it so padding on inside wont effect width or height
 * {
   box-sizing: border-box;
 }
@@ -16,17 +15,17 @@ body {
   line-height: 1.5;
 }
 
-//Headings
+// Headings
 h1,
 h2,
 h3 {
   margin: 0;
   font-weight: 400;
 
-  //use & in front when referring to attachment, and not just nested
   &.lg-heading {
     font-size: 6rem;
   }
+
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
