@@ -1,5 +1,6 @@
 //partial file starts with _
 $primary-color: #444;
+//$primary-color: #fff;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
@@ -31,6 +32,15 @@ $background-opacity: 0.9;
 }
 
 // Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+//set text color-> function returns something, mixin does not
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
     @return #000;
