@@ -39,9 +39,10 @@
     height: 25vh;
 
     .portrait {
-      background: url("../dist/img/portraitSm.jpg");
+      background-image: url(../img/portraitSm.jpg);
+      //background: url("../dist/img/portraitSm.jpg");
       width: 150px;
-      height: 150px;
+      height: 140px;
     }
   }
 
@@ -67,13 +68,17 @@
     margin-top: 10vh;
   }
 
+  #home .sm-heading {
+    font-size: 2rem;
+  }
+
   .projects {
     grid-template-columns: 1fr;
   }
 
   .boxes {
     div {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 

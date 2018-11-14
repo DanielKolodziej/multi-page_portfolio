@@ -59,7 +59,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/editedMe250b.jpg");
+      background-image: url(../img/portraitLg.jpg);
       border-radius: 50%;
       border: solid 3px #fe015e; }
   .menu .nav-item {
@@ -276,9 +276,9 @@ main {
   .menu-branding {
     height: 25vh; }
     .menu-branding .portrait {
-      background: url("../img/editedMe150test.jpg");
+      background-image: url(../img/portraitSm.jpg);
       width: 150px;
-      height: 150px; }
+      height: 140px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
@@ -289,10 +289,12 @@ main {
   main#home h1 {
     font-size: 4rem;
     margin-top: 10vh; }
+  #home .sm-heading {
+    font-size: 2rem; }
   .projects {
     grid-template-columns: 1fr; }
   .boxes div {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
   main {
     padding: 4rem 1rem; }
   .about-info .bio {
